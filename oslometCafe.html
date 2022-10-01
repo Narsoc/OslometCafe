@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+<style> 
+  html{
+    scroll-behavior: smooth;
+  }
+  body{
+    margin: 0px;
+    font-size: 20px;
+  }
+  .all {
+    background-color: rgb(251, 235, 212);
+    text-align: center;
+  }
+  #header{
+    background-color: black;
+    color: white;
+    text-align: left;
+    font-size:1.5em;
+  }
+  #header > img{
+    vertical-align: middle;
+    margin-right: 295px;
+  }
+  #header ul {
+    display: inline-block;
+  }
+  #header ul > li {
+    display: inline-block;
+  }
+  #header a {
+    color: inherit;
+    padding: 10px 25px;
+  }
+  #heading{
+    font-size: 30px;
+  }
+  .logo{
+    margin: 20px;
+    height: 90px;
+  }
+  #kaffeMeny{
+    display: inline-block;
+  }
+  .kaffe{
+    display: flex;
+    gap: 200px;
+  }
+  .allergi{
+    margin-top: 100px;
+    margin-bottom: 60px;
+  }
+  .allergener{
+    font-style: italic;
+  }
+  .vegetar{
+    color: green;
+    font-weight: bold;
+    font-size: larger;
+  }
+  .footer{
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 20px 50px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  .footer h3{
+      font-weight: 300;
+      margin-bottom: 30px;
+      letter-spacing: 1px;
+      margin-top: 20px;
+  }
+  .kontaktdetaljer{
+      flex-grow: 2;
+  }
+  .kontaktdetaljer a{
+      color: white;
+  }
+  h3{
+    margin-top: 50px;
+  }
+  h2{
+    margin-top: 80px;
+    font-size: 2.0em;
+  }
+</style>
+</head>
+
+<body>
+
+    <div class="all">
+    <header>
+
+        <div id="header">
+          <img class="logo" src="Logo.png" alt="Logo OsloMet Kafé">
+          <ul>
+            <li> <a href="#Hjem" style="text-decoration:none;">Hjem</a></li> <!--Linker ikke til noen spesifikk adresse-->
+            <li> <a href="#Meny" style="text-decoration:none;">Meny</a></li>
+            <li> <a href="#Catering" style="text-decoration:none;">Catering</a></li> <!--Linker ikke til noen spesifikk adresse-->
+            <li> <a href="#OmOss" style="text-decoration:none;">Om oss</a></li> <!--Linker ikke til noen spesifikk adresse-->
+          </ul>
+        </div>
+      
+        <img src="Cafe.png" alt="Innside av kaféen" width=100% height=100%>
+      
+    </header>
+    <div id="heading">
+      <h1 id="Meny">MENY</h1>
+   </div>
+
+    <div id="lunsjretter">
+      <h2>Lunsjretter</h2>
+      <h3>Ost & Skinke Baguette</h3>
+        <p>Fin / grov baguette påsmurt med ost og skinke</p>
+        <p class="allergener">(Allergener: G, M)</p>
+        <p>kr 75.-</p>
+      <h3>Rekesmørbrød</h3>
+        <p>Smørbrød med håndpillede reker, egg, majones og sitron </p>
+        <p class="allergener">(Allergener: G, E)</p>
+        <p>kr 98.-</p>
+      <h3>Vegetarsmørbrød <span class="vegetar">(v)</span></h3>
+        <p>Smørbrød med stekte grønnsaker, tomatsalsa, løkringer og mangodressing </p>
+        <p class="allergener">(Allergener: G)</p>
+        <p>kr 98.-</p>
+      <h3>Kyllingssalat</h3>
+        <p>Salat med kylling, spekeskinke, fetaost, cashewnøtter og aioli </p>
+        <p class="allergener">(Allergener: E, M, N)</p>
+        <p>kr 105.-</p>
+    </div>
+      <br>
+    <div id="varmMat">
+      <h2>Varm mat</h2>
+      <h3>Hjemmelaget grønnsakssuppe <span class="vegetar">(v)</span></h3>
+        <p>Servert med glutenfritt landbrød og kokt egg </p>
+        <p class="allergener">(Allergener: E)</p>
+        <p>kr 105.-</p>
+      <h3>Ostesmørbrød</h3>
+        <p>Ostesmørbrød med sennepsdressing, skinke, mozerella og grønn salat </p>
+        <p class="allergener">(Allergener: G, M)</p>
+        <p>kr 120.-</p>
+      <h3>Klassisk Burger</h3>
+        <p>Burger med ost, salat og chilimajones </p>
+        <p class="allergener">(Allergener: E, G, M)</p>
+        <p>kr 140.-</p>
+      <h3>Fiske Burger</h3>
+        <p>Fiskeburger med ost, salat og chilimajones </p>
+        <p class="allergener">(Allergener: F, G, M)</p>
+        <p>kr 140.-</p>
+      <h3>Vegetarburger <span class="vegetar">(v)</span></h3>
+        <p>Vegetarburger med ost, salat og chilimajones </p>
+        <p class="allergener">(Allergener: E, G, M)</p>
+        <p>kr 140.-</p>
+    </div>
+    <br>
+    <div id="kaffeMeny">
+      <h2>Kaffemeny</h2>
+      <div class="kaffe">
+        <div>
+        <h3>Svart kaffe</h3>
+          <p>kr 25.-</p>
+        <h3>Kaffe latte</h3>
+          <p>kr 37.-</p>
+          <p class="allergener">(Allergener: M)</p>
+        <h3>Cappuccino</h3>
+          <p>kr 35.-</p>
+          <p class="allergener">(Allergener: M)</p>
+        </div>
+        <div>
+          <h3>Americano</h3>
+          <p>kr 28.-</p>
+        <h3>Islatte</h3>
+          <p>kr 39.-</p>
+          <p class="allergener">(Allergener: M)</p>
+        <h3>Kakao m/krem</h3>
+          <p>kr 38.-</p>
+          <p class="allergener">(Allergener: M)</p>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="allergi">
+    <p>Allergener:</p>
+      <p>Egg(E) Fisk(F) Gluten(G) Melk(M) Nøtter(N)</p>
+      <p><span class="vegetar">(v)</span> = Vegetar</p>
+    </div>
+
+    <footer>
+    <div class="footer">
+        <div class="adresse">
+            <h3>OSLOMET CAFE</h3>
+            <p><address>Pilestredet 46, 0167 Oslo</address></p>
+        </div>
+        <div class="kontaktdetaljer">
+            <h3>KONTAKT OSS</h3>
+            <p>Epost: <a href="mailto: oslometcafe@oslomet.no">oslometcafe@oslomet.no</a></p>
+            <p>Telefon: 12 34 56 78</p>
+        </div>
+        <div class="aapningstider">
+            <h3>ÅPNINGSTIDER:</h3>
+            <p>Mandag - Fredag: 09.00-14.00</p>
+        </div>
+    </div>
+    </div>
+    </footer>
+</body>
+</html>
